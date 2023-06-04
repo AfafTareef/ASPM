@@ -1,4 +1,4 @@
-function BW=Shape_Deformation(Cell,test_img,vis,CNu,MaxD,Outedges,it,Outedges_cell,h) 
+function BW=Shape_Deformation(Cell,test_img,vis,CNu,MaxD,Outedges,it,h) 
 
 STEpts=[];
 InputShape=[];
@@ -85,8 +85,8 @@ OutputShape(:,2) = smooth(OutputShape(:,2));
 try OutputShape(STE_indx,:)=InputShape(STE_indx,:); end
 
 % Build the mask from the points coordinates
-BW1=Retreive_Phi(test_img,OutputShape,Outedges_cell,1);
-BW2=Retreive_Phi(test_img,AlignedShape,Outedges_cell,2);
+BW1=Retreive_Phi(test_img,OutputShape);  %Contour-based Deformation
+BW2=Retreive_Phi(test_img,AlignedShape); %Shape-based Deformation
 BW=or(BW1,BW2);
 
 if vis==1 

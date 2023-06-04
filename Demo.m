@@ -8,7 +8,7 @@ load('Data\Clusters.mat');
 
 clc;
 close all;
-ImNum=1;            
+ImNum=5;            
 test_img=TestIm{ImNum};
 Map=Clusters{ImNum};
 %+-------------------------------------------------+

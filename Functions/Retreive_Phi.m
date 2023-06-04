@@ -1,4 +1,4 @@
-function Phi=Retreive_Phi(test_img,pts,Outedges_cell,x)
+function Phi=Retreive_Phi(test_img,pts)
 
 pts(:,1)=round(pts(:,1));
 pts(:,2)=round(pts(:,2));
@@ -16,7 +16,6 @@ end
 
 Phi = imclose(Phi,strel('disk',10));
 Phi = imdilate(Phi, strel('disk',2));
-if x==1 Phi=or(Outedges_cell,Phi); end
 Phi=imfill(Phi,'holes');
 
 Phi=Check_Cytoplasm(Phi);
