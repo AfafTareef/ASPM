@@ -3,5 +3,6 @@ ASPM is a Matlab package to predict the shape of touched and overlapping cells i
 
 Please cite the following paper:
 
-[1] Tareef. (2023). Adaptive Shape Prediction Model (ASPM) for Touched and Overlapping Cells Segmentation in Cytology Images. Software Impacts. (when published)
+[1] Tareef, A. (2023). Adaptive Shape Prediction Model (ASPM) for touched and overlapping cell segmentation in cytology images. Software Impacts, 17, 100540.
+
 [2] Tareef, A., Song, Y., Cai, W., Huang, H., Chang, H., Wang, Y., ... & Chen, M. (2017). Automatic segmentation of overlapping cervical smear cells based on local distinctive features and guided shape deformation. Neurocomp., vol. 221, pp. 94–107, 2017.
